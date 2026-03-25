@@ -4,7 +4,7 @@ const { useState, useRef, useEffect, useCallback } = React;
 
 // ─── Config ───────────────────────────────────────────────
 const API_KEY = "AIzaSyCfVy2IWyKG93bkZsRIzkW5u1fs4bUeJSg";
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 const SYSTEM_PROMPT = `أنت "AI Edit Director" — مخرج إيدتات محترف وناقد فيديو متخصص. مهمتك تحليل أي فيديو أو صورة بدقة شديدة وإعطاء فيدباك احترافي وصريح بالعربية.
 
@@ -329,7 +329,7 @@ function App() {
           </div>
         </div>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-          <div className="tag">GEMINI 1.5 FLASH</div>
+          <div className="tag">GEMINI 2.0 FLASH</div>
           <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#00ff88', boxShadow: '0 0 8px #00ff88' }}></div>
           <span style={{ fontSize: 11, color: '#00ff88', fontWeight: 700 }}>LIVE</span>
         </div>
