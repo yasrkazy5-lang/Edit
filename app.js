@@ -4,7 +4,7 @@ const { useState, useRef, useEffect, useCallback } = React;
 
 // ─── Config ───────────────────────────────────────────────
 const API_KEY = "AIzaSyCfVy2IWyKG93bkZsRIzkW5u1fs4bUeJSg";
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
 
 const SYSTEM_PROMPT = `أنت "AI Edit Director" — مخرج إيدتات محترف وناقد فيديو متخصص. مهمتك تحليل أي فيديو أو صورة بدقة شديدة وإعطاء فيدباك احترافي وصريح بالعربية.
 
